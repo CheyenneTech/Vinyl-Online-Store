@@ -1,1 +1,1 @@
-# Vinly-Online-Store
+# Vinyl-Online-Store
