@@ -1,0 +1,180 @@
+* {
+    background-color: #FFFCF6;
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mobile navigation -- mobile first*/
+
+.menu {
+    display: none;
+}
+
+.mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #965165e8;
+    padding-top: 120px;
+    z-index: 1;
+    
+    
+}
+
+.mobile-nav a {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--dark);
+    box-shadow: 0.5px 0.5px 5px var(--dark);
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+    transition: 0.6s;
+}
+
+.mobile-nav a:hover {
+   box-shadow: 0.5px 0.5px 5px #ffb3c9af;
+}
+
+
+
+/* hamburger */
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 9999;
+    user-select: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    appearance: none;
+    
+    
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #a11b1b;
+    border-radius: 6px;
+    z-index: 2;
+    transform-origin: 0 0;
+    transition: 0.6s;
+    box-shadow: 0.5px 0.5px 3px #000000af;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: red;
+    
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translate(0px, -3px) rotate(45deg);
+    
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+    
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px, 2.6px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pictures */
+
+#intro-pic {
+    max-width: 200px;
+}
+
+#music {
+    max-width: 200px;
+}
+
+#player {
+    max-width: 200px;
+}
+
+#buy-and-sell {
+    max-width: 200px;
+}
+
+#rsd-logo {
+    max-width: 200px;
+}
+
+
+
+
+/* media q's */
+
+@media (min-width: 480px) {
+
+}
+
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .mobile-nav {
+        display: none;
+    }
+
+
+
+@media (min-width:1200px) {
+
+}
+
+
