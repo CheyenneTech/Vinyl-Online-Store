@@ -1,23 +1,33 @@
 * {
-    background-color: #FFFCF6;
+    margin: 0;
     padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+   
 }
+
+body {
+    
+    background: rgb(224,187,115);
+    background: linear-gradient(90deg, rgba(224,187,115,1) 0%, rgba(207,136,95,0.9320388349514563) 50%, rgba(170,138,13,1) 100%);
+}
+
+
 
 .logo {
     font-family: Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ff8652;
+    color: #ffffff;
     text-shadow: 1px 1px 1px #4f4c4c9e;
     font-size: 20px;
+    margin-left: 20px;
     
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    background-color: #000000c5;
+    padding-bottom: 15px;
 }
 
 /* mobile navigation -- mobile first*/
@@ -34,10 +44,12 @@ header {
     right: 20%;
     width: 70%;
     min-height: 100vh;
-    background-color: #eaeaeab8;
+    background-color: #eaeaea53;
     backdrop-filter: blur(10px);
     padding-top: 120px;
+    padding-left: 30px;
     z-index: 99;
+
     
     
 }
@@ -46,12 +58,13 @@ header {
     display: block;
     text-align: center;
     margin-bottom: 16px;
-    padding: 12px 16px;
+    padding: 14px;
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 6px;
+    border-radius: 10px;
     text-decoration: none;
     color: var(--dark);
-    box-shadow: 0.5px 0.5px 5px var(--dark);
+    box-shadow: 0.2px 1px 6px #0000007a;
     transition: 0.4s;
 }
 
@@ -61,7 +74,7 @@ header {
 }
 
 .mobile-nav a:hover {
-   box-shadow: 0.5px 0.5px 5px #ffb3c9af;
+   box-shadow: 0.5px 0.5px 5px #ff8652;
 }
 
 
@@ -77,6 +90,9 @@ header {
     cursor: pointer;
     appearance: none;
     padding-left: 20px;
+    color: transparent;
+    
+    
     
 }
 
@@ -85,18 +101,21 @@ header {
     width: 33px;
     height: 3px;
     margin-bottom: 5px;
+    margin-right: 20px;
     position: relative;
-    background-color: #252525d6;
+    background-color: #ffffff;
     border-radius: 6px;
     z-index: 2;
     transform-origin: 0 0;
     transition: 0.6s;
     box-shadow: 0.5px 0.5px 1px #000000af;
+    
+    
 }
 
 .hamburger:hover span:nth-child(2) {
     transform: translateX(10px);
-    background-color: #ff8652;
+    background-color: #f4e603;
     
 }
 
@@ -116,17 +135,21 @@ header {
 }
 
 .hamburger.is-active:hover span {
-    background-color: #000;
+    background-color: #f4e603;
 }
 
 
 /* rsd section 1 */
 
+#section-1 {
+    
+}
 
 .section-1-rsd {
-    height: 60vh;
+    min-height: 63vh;
     display: flex;
     flex-direction: column;
+    
     
 }
 
@@ -148,21 +171,78 @@ header {
     margin-top: 1px;
 }
 
+.launch-time {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+
+}
+
+.launch-time div {
+    flex-basis: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: 7px;
+}
+
+.launch-time div p span {
+    margin-bottom: 30px;
+}
+
+
+.section-count h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* section 2 featured items */
 
 .section-2-features {
-
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 #section-2 h1 {
     align-self: center;
+    font-size: 40px;
 }
-
 
 
 
 
 /* pictures */
+
+#section-1 img {
+    background-color: transparent;
+    transform: rotate(-10deg);
+    margin: 22px;
+    
+}
+
+#section-2 img {
+    max-width: 300px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    border: solid 7px #c4b782;
+    box-shadow:0.5px 1px  4px #00000088;
+}
+
+
 
 #intro-pic {
     margin-top: 45px;
@@ -172,45 +252,119 @@ header {
     
 }
 
-#music {
-    max-width: 200px;
-}
-
-#player {
-    max-width: 200px;
-}
-
-#buy-and-sell {
-    max-width: 200px;
-}
-
 #rsd-logo {
-    max-width: 200px;
+    display: flex;
+    
+    
 }
+
+
 
 
 /* buttons */
 
 #section-1 button {
-    z-index: 2;
-    height: 40px;
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 12px;
+    text-align: center;
+    transition: 200ms;
+    box-shadow: 0.6px 1px 4px #0000007a;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: rgb(136,115,82);
+    background: linear-gradient(0deg, rgba(136,115,82,1) 0%, rgba(255,231,157,1) 100%);
     align-self: center;
-    padding: 10px;
+    
 }
+
+#section-1 button:not(:disabled):hover,
+#section-1 button:not(:disabled):focus {
+  outline: 0;
+  
+  background-image: linear-gradient(-180deg, #e4e4e4 0%, rgb(205, 183, 115) 100%);
+  box-shadow: 0.6px 1px 4px #0000007a;
+}
+
+#section-1 button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+#section-2 button {
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    transition: 200ms;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: rgb(136,115,82);
+    background: linear-gradient(0deg, rgba(136,115,82,1) 0%, rgba(255,231,157,1) 100%);
+    box-shadow: 0.6px 1px 4px #0000007a;
+}
+
+#section-2 button:not(:disabled):hover,
+#section-2 button:not(:disabled):focus {
+  outline: 0;
+  background-image: linear-gradient(-180deg, #e4e4e4 0%, rgb(205, 183, 115) 100%);
+  box-shadow: 0.6px 1px 4px #0000007a;
+}
+
+#section-2 button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+
 
 
 
 /* media q's */
 
-@media (min-width: 480px) {
+@media (min-width: 300px) {
+    body {
+        background-color: transparent;
+        padding: 10px;
+    }
 
+    header {
+        background-color: transparent;
+    }
+    
 }
 
 
 @media (min-width: 768px) {
     * {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    body {
+        background: rgb(224,187,115);
+    background: linear-gradient(90deg, rgba(224,187,115,1) 0%, rgba(207,136,95,0.9320388349514563) 50%, rgba(170,138,13,1) 100%);
     }
     
    .hamburger {
@@ -234,6 +388,33 @@ header {
         z-index: 1;
         
     }
+
+    .section-2-features {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 100px;
+        
+    }
+
+    #section-2 img{
+        display: flex;
+        max-width: 50%;
+        justify-content: space-around;
+        justify-items: center;
+        
+        margin-bottom: 40px;
+    }
+
+    #rsd-logo {
+       
+    }
+    
+    .launch-time {
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 
 @media (min-width: 1000px) {
