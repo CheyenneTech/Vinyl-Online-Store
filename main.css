@@ -13,13 +13,14 @@ body {
 
 
 .logo {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 1px 1px 1px #4f4c4c9e;
     font-size: 20px;
     margin-left: 20px;
+    
     
 }
 
@@ -156,7 +157,11 @@ header {
 #section-1 h1 {
     align-self: center;
     margin-top: 35px;
-   
+    margin-bottom: 10px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight:bolder;
     font-size: 40px;
     z-index: 2;
     background-color: transparent;
@@ -165,10 +170,18 @@ header {
 #section-1 p {
     background-color: transparent;
     z-index: 2;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 1px;
+    margin-bottom: 15px;
+}
+
+#section-1 h5 {
+    align-self: center;
+    font-size: 10px;
+    
 }
 
 .launch-time {
@@ -215,6 +228,8 @@ header {
     background-color: transparent;
     flex-wrap: wrap;
     margin-top: 10px;
+    background-color: #ee790536;
+    border-radius: 50%;
 }
 
 #section-2 h1 {
@@ -231,6 +246,7 @@ header {
     background-color: transparent;
     transform: rotate(-10deg);
     margin: 22px;
+    max-width: 570px;
     
 }
 
@@ -252,11 +268,7 @@ header {
     
 }
 
-#rsd-logo {
-    display: flex;
-    
-    
-}
+
 
 
 
@@ -353,6 +365,9 @@ header {
         background-color: transparent;
     }
     
+    #section-1 h1 {
+        font-size: 35px;
+    }
 }
 
 
@@ -399,16 +414,33 @@ header {
 
     #section-2 img{
         display: flex;
-        max-width: 50%;
+        max-width: 350px;
         justify-content: space-around;
         justify-items: center;
         
         margin-bottom: 40px;
     }
 
-    #rsd-logo {
-       
+    .menu{
+        display: flex;
+        
     }
+    .menu a{
+        color: white;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bolder;
+        font-family: 'Neue Plak', sans-serif;
+        border-bottom: 2px solid transparent;
+        transition: all .55s ease;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .menu a:hover{
+        border-bottom: 2px solid white;
+    }
+
+    
     
     .launch-time {
         display: flex;
